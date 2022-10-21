@@ -82,7 +82,7 @@ kube-system   metrics-server-78cd48fcdf-dq4w5            3m           16Mi
 ```
 
 # Official Repo
-kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Additionally, another way:
 
