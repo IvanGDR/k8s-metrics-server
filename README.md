@@ -22,7 +22,6 @@ Install K8S Metrics Server
 $ kubectl apply -f https://raw.githubusercontent.com/ACloudGuru-Resources/content-cka-resources/master/metrics-server-components.yaml
 ```
 ```
-
 serviceaccount/metrics-server created
 clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
 clusterrole.rbac.authorization.k8s.io/system:metrics-server created
@@ -43,7 +42,7 @@ $ kubectl get --raw /apis/metrics.k8s.io/
 {"kind":"APIGroup","apiVersion":"v1","name":"metrics.k8s.io","versions":[{"groupVersion":"metrics.k8s.io/v1beta1","version":"v1beta1"}],"preferredVersion":{"groupVersion":"metrics.k8s.io/v1beta1","version":"v1beta1"}}
 ```
 
-Execute Metrics command on nodes
+Execute Node Metrics command
 
 ```
 $ kubectl top nodes
@@ -56,11 +55,10 @@ ip-172-31-25-163   51m          2%     1124Mi          14%
 ip-172-31-26-134   65m          3%     1485Mi          18%
 ```
 
-Execute Metrics command on all namespaces
+Execute Pod Metrics command on all namespaces
 
 ```
- $ kubectl top pods --all-na
-mespaces
+ $ kubectl top pods --all-namespaces
 ```
 ```
 NAMESPACE     NAME                                       CPU(cores)   MEMORY(bytes)
