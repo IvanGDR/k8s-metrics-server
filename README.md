@@ -1,6 +1,6 @@
-# k8s-metrics-server
+# K8S Metrics Server
 
-K8s Metrics Server
+
 
 Make sure nodes are up and running
 
