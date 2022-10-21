@@ -85,7 +85,9 @@ kube-system   metrics-server-78cd48fcdf-dq4w5            3m           16Mi
 # Additionally, another way:
 
  $ git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+ 
  cd to: kubernetes-metrics-server
+ 
  $ kubernetes-metrics-server >  kubectl create -f ~/kubernetes-metrics-server/
  
  ```
