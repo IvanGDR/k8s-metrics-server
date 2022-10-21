@@ -80,3 +80,22 @@ kube-system   kube-proxy-p55jt                           1m           13Mi
 kube-system   kube-scheduler-ip-172-31-23-144            3m           18Mi
 kube-system   metrics-server-78cd48fcdf-dq4w5            3m           16Mi
 ```
+
+
+# Additionally, another way:
+
+ $ git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+ cd to: kubernetes-metrics-server
+ $ kubernetes-metrics-server >  kubectl create -f ~/kubernetes-metrics-server/
+ 
+ ```
+ clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+serviceaccount/metrics-server created
+deployment.apps/metrics-server created
+service/metrics-server created
+clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+ ```
